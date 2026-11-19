@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode: "class", theme: {extend: {colors: {"secondary": "#40683e", "on-primary": "#ffffff", "primary-fixed": "#8cfb8c", "surface-variant": "#dee5d9", "on-error-container": "#93000a", "primary-container": "#038527", "tertiary-fixed": "#ffd9e1", "inverse-primary": "#70dd73", "surface": "#f5fcef", "surface-tint": "#006e1e", "on-secondary": "#ffffff", "error": "#ba1a1a", "inverse-on-surface": "#ecf3e7", "on-error": "#ffffff", "on-primary-fixed": "#002204", "on-background": "#171d16", "tertiary-fixed-dim": "#ffb1c6", "outline-variant": "#becab8", "surface-bright": "#f5fcef", "primary-fixed-dim": "#70dd73", "secondary-fixed": "#c1efba", "surface-container-high": "#e3eade", "inverse-surface": "#2c322a", "tertiary-container": "#c34472", "secondary-container": "#c1efba", "outline": "#6f7a6b", "on-tertiary-fixed-variant": "#891346", "secondary-fixed-dim": "#a5d29f", "background": "#f5fcef", "surface-container": "#e9f0e4", "surface-dim": "#d5dcd0", "on-secondary-container": "#466e44", "on-primary-fixed-variant": "#005314", "on-secondary-fixed-variant": "#284f28", "on-primary-container": "#ebffe4", "on-surface-variant": "#3f4a3c", "on-surface": "#171d16", "on-tertiary-container": "#fff7f7", "on-secondary-fixed": "#002204", "tertiary": "#a32b5a", "surface-container-lowest": "#ffffff", "primary": "#00691c", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "surface-container-low": "#eff6e9", "surface-container-highest": "#dee5d9", "on-tertiary-fixed": "#3f001b"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"margin-mobile": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "margin": "2rem", "space-md": "1rem", "gutter": "1.5rem", "space-lg": "1.5rem", "gutter-mobile": "1rem"}, fontFamily: {"headline-sm": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "caption": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"]}, fontSize: {"headline-sm": ["20px", {lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600"}], "title-sm": ["16px", {lineHeight: "24px", fontWeight: "600"}], "label-sm": ["12px", {lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600"}], "label-md": ["14px", {lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600"}], "headline-md": ["24px", {lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "600"}], "headline-lg": ["32px", {lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700"}], "body-sm": ["13px", {lineHeight: "18px", fontWeight: "400"}], "display-hero-mobile": ["32px", {lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700"}], "display-hero": ["48px", {lineHeight: "56px", letterSpacing: "-0.025em", fontWeight: "700"}], "body-md": ["14px", {lineHeight: "22px", fontWeight: "400"}], "headline-lg-mobile": ["26px", {lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "700"}], "caption": ["11px", {lineHeight: "14px", letterSpacing: "0.03em", fontWeight: "500"}], "title-md": ["18px", {lineHeight: "26px", fontWeight: "600"}], "body-lg": ["16px", {lineHeight: "26px", fontWeight: "400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="p-space-lg flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[24px]">science</span></div><div class="flex flex-col"><span class="font-title-sm text-title-sm text-on-surface font-bold leading-tight">GMS Human</span><span class="font-caption text-caption text-primary tracking-wider uppercase font-semibold">Nutrition</span></div></div><div class="mt-space-sm inline-flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span class="font-caption text-caption text-on-surface-variant font-medium">Controle de Estoque</span></div></div><nav class="flex flex-col gap-1 px-space-md mt-space-sm" data-active-classes="bg-primary-container text-on-primary font-label-md font-semibold rounded-lg shadow-[0_1px_3px_0_rgba(15,23,42,0.04)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="produtos" href="#"><span class="font-label-md text-label-md">Produtos</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="estoque" href="#"><span class="font-label-md text-label-md">Estoque</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary font-label-md font-semibold shadow-sm transition-all" data-path="integracao" href="#"><span class="font-label-md text-label-md">Integração</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="entrada-de-mercadorias" href="#"><span class="font-label-md text-label-md">Entrada de mercadorias</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="saida-de-mercadorias" href="#"><span class="font-label-md text-label-md">Saída de mercadorias</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="usuarios" href="#"><span class="font-label-md text-label-md">Usuários</span></a></nav></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm"><div class="inline-flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-lowest rounded-full shadow-[0_1px_3px_0_rgba(15,23,42,0.04)]"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-caption text-caption font-semibold text-on-surface">B2B Clinical Gateway</span><span class="font-caption text-caption text-on-surface-variant">| Conectado</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span></button></div><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Olá, Usuário!</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-space-lg py-space-md flex flex-col gap-space-md">
+<!-- Top Action & Header Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-caption text-caption">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">home</span>
+            Início
+          </a>
+<span class="text-outline-variant">/</span>
+<span class="font-semibold text-primary">Integrações</span>
+</nav>
+<div class="flex items-center gap-3">
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">Integrações de Marketplaces</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            3 Conexões Ativas
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-3xl">
+          Conexão omnicanal em tempo real com canais de venda externos, sincronização de catálogo e estoques farmacêuticos validados.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm self-start lg:self-center shrink-0">
+<button class="group px-space-md py-2.5 bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-on-surface rounded-lg shadow-sm transition-all flex items-center gap-2 font-label-md text-label-md" id="btn-sync-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary group-hover:rotate-180 transition-transform duration-500">sync</span>
+          Sincronizar Todos
+        </button>
+<button class="px-space-md py-2.5 bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-on-surface rounded-lg shadow-sm transition-all flex items-center gap-2 font-label-md text-label-md" id="btn-logs" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+          Logs de Auditoria
+        </button>
+<button class="px-space-md py-2.5 bg-primary hover:bg-primary-container text-on-primary rounded-lg shadow-sm transition-all flex items-center gap-2 font-label-md text-label-md font-semibold" id="btn-add-integration" type="button">
+<span class="material-symbols-outlined text-[18px]">add_link</span>
+          Adicionar integração
+        </button>
+</div>
+</div>
+<!-- Filter & Live Pipeline Control Strip -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm px-space-md shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm flex-1 max-w-xl">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full pl-9 pr-space-md py-1.5 bg-surface-container-low rounded-lg text-on-surface placeholder:text-outline text-body-sm font-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary transition-all" placeholder="Filtrar por canal, SKU mapeado, webhook..." type="text"/>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 hover:bg-surface-container-high transition-colors" type="button">
+            Todos (3)
+          </button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container transition-colors" type="button">
+            B2C Full
+          </button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container transition-colors" type="button">
+            Farma &amp; Nutri
+          </button>
+</div>
+</div>
+<div class="flex items-center gap-space-md self-end md:self-center font-caption text-caption text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+<span class="">SLA de Atualização: <strong>&lt; 60s</strong></span>
+</div>
+<div class="h-4 w-px bg-surface-container-high"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">cloud_done</span>
+<span class="">Fila de Mensagens: <strong>0 pendentes</strong></span>
+</div>
+</div>
+</div>
+<!-- 3-Column Marketplace Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-lg">
+<!-- CARD 1: SHOPEE -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#EE4D2D] via-[#FF6633] to-[#EE4D2D]"></div>
+<div class="flex flex-col gap-space-md">
+<!-- Card Header -->
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-[#EE4D2D]/10 flex items-center justify-center shrink-0 shadow-xs">
+<svg class="w-7 h-7" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8V6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6V8H4L5.6 20.8C5.75 21.5 6.35 22 7.05 22H16.95C17.65 22 18.25 21.5 18.4 20.8L20 8H16ZM10 6C10 4.9 10.9 4 12 4C13.1 4 14 4.9 14 6V8H10V6ZM12.2 17.5C10.1 17.5 9.2 16.5 9.2 15.8C9.2 14.8 10.2 14.4 11.2 14.1C12.7 13.6 13.5 13.3 13.5 12.4C13.5 11.8 12.9 11.3 12 11.3C11 11.3 10.4 11.8 10.3 12.6H8.9C9 11 10.2 10 12 10C13.8 10 14.9 11.1 14.9 12.4C14.9 13.6 13.8 14 12.6 14.4C11.3 14.8 10.6 15.2 10.6 15.8C10.6 16.3 11.2 16.7 12.2 16.7C13.3 16.7 13.9 16.2 14.1 15.4H15.5C15.3 16.9 13.9 17.5 12.2 17.5Z" fill="#EE4D2D"></path>
+</svg>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Shopee</h2>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-caption text-caption font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                    Conectado
+                  </span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant font-medium">Canal Oficial B2C / Farma &amp; Nutrição</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:bg-surface-container hover:text-on-surface transition-colors" title="Mais opções" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<!-- Feature Check Toggles -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-2">
+<span class="font-caption text-caption uppercase tracking-wider text-outline font-semibold">Sincronizadores Ativos</span>
+<div class="grid grid-cols-2 gap-2 font-body-sm text-body-sm text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="text-caption font-medium">Importação pedidos</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="text-caption font-medium">Sinc. estoque</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="text-caption font-medium">Envio de produtos</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="text-caption font-medium">Atualização status</span>
+</div>
+</div>
+</div>
+<!-- 30-Day Metrics -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface uppercase tracking-wider">Últimos 30 dias</span>
+<span class="font-caption text-caption text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+                API v2.4 Live
+              </span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Pedidos importados</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">167</span>
+<span class="font-caption text-caption text-on-surface-variant">pedidos</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Produtos sincronizados</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">142</span>
+<span class="font-caption text-caption text-on-surface-variant">SKUs</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Taxa de sucesso</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-title-sm text-title-sm font-bold text-primary">98%</span>
+<span class="font-caption text-caption text-secondary">confiável</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Tempo de sincronização</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">15</span>
+<span class="font-caption text-caption text-on-surface-variant">min</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card Footer Actions -->
+<div class="mt-space-md pt-space-sm flex items-center gap-space-sm">
+<button class="flex-1 py-2 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold text-center transition-colors" type="button">
+            Configurar
+          </button>
+<button class="card-sync-btn flex-1 py-2 px-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+            Sincronizar agora
+          </button>
+</div>
+</div>
+<!-- CARD 2: MERCADO LIVRE -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#FFE600] via-[#2D3277] to-[#FFE600]"></div>
+<div class="flex flex-col gap-space-md">
+<!-- Card Header -->
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-[#FFE600]/20 flex items-center justify-center shrink-0 shadow-xs">
+<svg class="w-7 h-7" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.5 9.5L12 3L4.5 9.5V20C4.5 20.6 5 21 5.6 21H18.4C19 21 19.5 20.6 19.5 20V9.5Z" fill="#FFE600" opacity="0.3"></path>
+<path d="M16 11C15.4 11 15 11.4 15 12V14.5C14.7 14.2 14.1 14 13.5 14C12.7 14 12 14.6 12 15.3C11.6 15 11.1 14.9 10.6 15C9.8 15.1 9.2 15.8 9.2 16.6C9 16.5 8.7 16.5 8.5 16.5C7.7 16.5 7 17.2 7 18C7 18.8 7.7 19.5 8.5 19.5H16C17.7 19.5 19 18.2 19 16.5C19 14.8 17.7 13.5 16 13.5V12C16 11.4 16.4 11 16 11Z" fill="#2D3277"></path>
+<path d="M8 9.5L12 6L16 9.5" stroke="#2D3277" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Mercado Livre</h2>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-caption text-caption font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                    Conectado
+                  </span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant font-medium">Loja Oficial Full / Suplementos</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:bg-surface-container hover:text-on-surface transition-colors" title="Mais opções" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<!-- Feature Check Toggles -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-2">
+<span class="font-caption text-caption uppercase tracking-wider text-outline font-semibold">Sincronizadores Ativos</span>
+<div class="grid grid-cols-2 gap-2 font-body-sm text-body-sm text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="text-caption font-medium">Importação pedidos</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="text-caption font-medium">Sinc. estoque</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="text-caption font-medium">Envio de produtos</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="text-caption font-medium">Atualização status</span>
+</div>
+</div>
+</div>
+<!-- 30-Day Metrics -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface uppercase tracking-wider">Últimos 30 dias</span>
+<span class="font-caption text-caption text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">format_image_left</span>
+                MercadoLíder Platinum
+              </span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Pedidos importados</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">124</span>
+<span class="font-caption text-caption text-on-surface-variant">pedidos</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Produtos sincronizados</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">160</span>
+<span class="font-caption text-caption text-on-surface-variant">SKUs</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Taxa de sucesso</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-title-sm text-title-sm font-bold text-primary">99%</span>
+<span class="font-caption text-caption text-secondary">ótimo</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Tempo de sincronização</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">12</span>
+<span class="font-caption text-caption text-on-surface-variant">min</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card Footer Actions -->
+<div class="mt-space-md pt-space-sm flex items-center gap-space-sm">
+<button class="flex-1 py-2 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold text-center transition-colors" type="button">
+            Configurar
+          </button>
+<button class="card-sync-btn flex-1 py-2 px-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+            Sincronizar agora
+          </button>
+</div>
+</div>
+<!-- CARD 3: MAGALU -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0086FF] via-[#00A2FF] to-[#0086FF]"></div>
+<div class="flex flex-col gap-space-md">
+<!-- Card Header -->
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-[#0086FF]/10 flex items-center justify-center shrink-0 shadow-xs">
+<svg class="w-7 h-7" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM6.8 15.5L9.5 8.5H11.2L8.5 15.5H6.8ZM12.8 15.5L15.5 8.5H17.2L14.5 15.5H12.8Z" fill="#0086FF"></path>
+<circle cx="12" cy="12" fill="#0086FF" fill-opacity="0.3" r="3"></circle>
+</svg>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Magalu</h2>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-caption text-caption font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                    Conectado
+                  </span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant font-medium">Marketplace Parceiro / Saúde &amp; Bem-estar</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:bg-surface-container hover:text-on-surface transition-colors" title="Mais opções" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<!-- Feature Check Toggles -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-2">
+<span class="font-caption text-caption uppercase tracking-wider text-outline font-semibold">Sincronizadores Ativos</span>
+<div class="grid grid-cols-2 gap-2 font-body-sm text-body-sm text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="text-caption font-medium">Importação pedidos</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="text-caption font-medium">Sinc. estoque</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="text-caption font-medium">Envio de produtos</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="text-caption font-medium">Atualização status</span>
+</div>
+</div>
+</div>
+<!-- 30-Day Metrics -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface uppercase tracking-wider">Últimos 30 dias</span>
+<span class="font-caption text-caption text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">autorenew</span>
+                Webhook Integra Farma
+              </span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Pedidos importados</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">67</span>
+<span class="font-caption text-caption text-on-surface-variant">pedidos</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Produtos sincronizados</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">76</span>
+<span class="font-caption text-caption text-on-surface-variant">SKUs</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Taxa de sucesso</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-title-sm text-title-sm font-bold text-primary">97%</span>
+<span class="font-caption text-caption text-secondary">estável</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Tempo de sincronização</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-title-sm text-title-sm font-bold text-on-surface">30</span>
+<span class="font-caption text-caption text-on-surface-variant">min</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card Footer Actions -->
+<div class="mt-space-md pt-space-sm flex items-center gap-space-sm">
+<button class="flex-1 py-2 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold text-center transition-colors" type="button">
+            Configurar
+          </button>
+<button class="card-sync-btn flex-1 py-2 px-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+            Sincronizar agora
+          </button>
+</div>
+</div>
+</div>
+<!-- Bottom Clinical & Regulatory Compliance Audit Strip -->
+</div>
+<!-- Notification Toast for Actions -->
+<div class="fixed bottom-6 right-6 bg-inverse-surface text-inverse-on-surface px-space-md py-3 rounded-xl shadow-xl flex items-center gap-3 translate-y-24 opacity-0 transition-all duration-300 pointer-events-none z-50" id="toast-feedback">
+<span class="material-symbols-outlined text-inverse-primary text-[20px]">check_circle</span>
+<span class="font-label-md text-label-md" id="toast-message">Sincronização em segundo plano iniciada.</span>
+</div>
+<script>
+    (function() {
+      const toast = document.getElementById('toast-feedback');
+      const toastMsg = document.getElementById('toast-message');
+      let toastTimer = null;
+
+      function showNotification(message) {
+        if (!toast || !toastMsg) return;
+        toastMsg.textContent = message;
+        toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+        toast.classList.add('translate-y-0', 'opacity-100');
+
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+          toast.classList.remove('translate-y-0', 'opacity-100');
+        }, 3200);
+      }
+
+      const syncAllBtn = document.getElementById('btn-sync-all');
+      if (syncAllBtn) {
+        syncAllBtn.addEventListener('click', () => {
+          showNotification('Sincronização global disparada: Shopee, Mercado Livre e Magalu atualizados.');
+        });
+      }
+
+      const addBtn = document.getElementById('btn-add-integration');
+      if (addBtn) {
+        addBtn.addEventListener('click', () => {
+          showNotification('Assistente de conexão OAuth 2.0 aberto para novo marketplace.');
+        });
+      }
+
+      const logsBtn = document.getElementById('btn-logs');
+      if (logsBtn) {
+        logsBtn.addEventListener('click', () => {
+          showNotification('Abrindo relatórios de chamadas de webhook e payload JSON.');
+        });
+      }
+
+      document.querySelectorAll('.card-sync-btn').forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          const cardTitle = e.currentTarget.closest('.group')?.querySelector('h2')?.textContent || 'Canal';
+          const icon = e.currentTarget.querySelector('.material-symbols-outlined');
+          if (icon) {
+            icon.classList.add('animate-spin');
+            setTimeout(() => {
+              icon.classList.remove('animate-spin');
+            }, 1200);
+          }
+          showNotification(`Sincronização forçada concluída com sucesso para ${cardTitle}!`);
+        });
+      });
+    })();
+  </script>
+</div></main></div>
+<div class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 flex items-center justify-center p-4" id="modal-edit-integration"><div class="bg-surface-container-lowest rounded-2xl shadow-xl w-full max-w-lg border border-outline-variant/30 flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-200"><div class="px-6 py-4 border-b border-surface-container flex items-center justify-between"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[20px]">tune</span></div><div><h3 class="font-title-md text-title-sm text-on-surface font-bold leading-tight">Editar integração</h3><p class="font-caption text-caption text-on-surface-variant">Atualize as credenciais e parâmetros do marketplace</p></div></div><button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:bg-surface-container hover:text-on-surface transition-colors" onclick="document.getElementById('modal-edit-integration').remove()" type="button"><span class="material-symbols-outlined text-[20px]">close</span></button></div><form class="p-6 flex flex-col gap-4" onsubmit="event.preventDefault(); document.getElementById('modal-edit-integration').remove();"><div class="flex flex-col gap-1.5"><label class="font-label-sm text-label-sm font-semibold text-on-surface">Inserir imagem</label><div class="flex items-center gap-3 p-3 bg-surface-container-low rounded-xl border border-outline-variant/40"><div class="w-12 h-12 rounded-lg bg-[#EE4D2D]/10 flex items-center justify-center shrink-0 border border-[#EE4D2D]/20 shadow-xs"><svg class="w-6 h-6" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8V6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6V8H4L5.6 20.8C5.75 21.5 6.35 22 7.05 22H16.95C17.65 22 18.25 21.5 18.4 20.8L20 8H16ZM10 6C10 4.9 10.9 4 12 4C13.1 4 14 4.9 14 6V8H10V6ZM12.2 17.5C10.1 17.5 9.2 16.5 9.2 15.8C9.2 14.8 10.2 14.4 11.2 14.1C12.7 13.6 13.5 13.3 13.5 12.4C13.5 11.8 12.9 11.3 12 11.3C11 11.3 10.4 11.8 10.3 12.6H8.9C9 11 10.2 10 12 10C13.8 10 14.9 11.1 14.9 12.4C14.9 13.6 13.8 14 12.6 14.4C11.3 14.8 10.6 15.2 10.6 15.8C10.6 16.3 11.2 16.7 12.2 16.7C13.3 16.7 13.9 16.2 14.1 15.4H15.5C15.3 16.9 13.9 17.5 12.2 17.5Z" fill="#EE4D2D"></path></svg></div><div class="flex flex-col flex-1 min-w-0"><span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">shopee.png</span><span class="font-caption text-caption text-on-surface-variant">PNG / SVG até 2MB</span></div><button class="px-3 py-1.5 rounded-lg border border-outline-variant bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-medium transition-colors" type="button">Alterar</button></div></div><div class="grid grid-cols-1 md:grid-cols-2 gap-3"><div class="flex flex-col gap-1.5"><label class="font-label-sm text-label-sm font-semibold text-on-surface">Nome</label><input class="w-full px-3 py-2 bg-surface-container-low rounded-lg text-on-surface text-body-sm font-body-sm border border-outline-variant/40 focus:outline-none focus:ring-1 focus:ring-primary focus:bg-surface-container-lowest transition-all" required="" type="text" value="Shopee"/></div><div class="flex flex-col gap-1.5"><label class="font-label-sm text-label-sm font-semibold text-on-surface">Client ID</label><input class="w-full px-3 py-2 bg-surface-container-low rounded-lg text-on-surface text-body-sm font-body-sm border border-outline-variant/40 focus:outline-none focus:ring-1 focus:ring-primary focus:bg-surface-container-lowest transition-all" required="" type="text" value="279864263784"/></div></div><div class="flex flex-col gap-1.5"><label class="font-label-sm text-label-sm font-semibold text-on-surface">URL de Direcionamento</label><input class="w-full px-3 py-2 bg-surface-container-low rounded-lg text-on-surface text-body-sm font-body-sm border border-outline-variant/40 focus:outline-none focus:ring-1 focus:ring-primary focus:bg-surface-container-lowest transition-all" required="" type="url" value="https://shopee.com.br"/></div><div class="flex flex-col gap-1.5"><label class="font-label-sm text-label-sm font-semibold text-on-surface">Senha Client ID</label><div class="relative"><input class="w-full px-3 py-2 pr-9 bg-surface-container-low rounded-lg text-on-surface text-body-sm font-body-sm border border-outline-variant/40 focus:outline-none focus:ring-1 focus:ring-primary focus:bg-surface-container-lowest transition-all tracking-widest" required="" type="password" value="minhasenhaultrasecreta123"/><button class="absolute right-2.5 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface" type="button"><span class="material-symbols-outlined text-[18px]">visibility</span></button></div></div><div class="flex flex-col gap-1.5"><label class="font-label-sm text-label-sm font-semibold text-on-surface">Link API</label><input class="w-full px-3 py-2 bg-surface-container-low rounded-lg text-on-surface text-body-sm font-body-sm border border-outline-variant/40 focus:outline-none focus:ring-1 focus:ring-primary focus:bg-surface-container-lowest transition-all" required="" type="text" value="https://open.business.shopee.com.br/api/v2"/></div><div class="mt-2 pt-4 border-t border-surface-container flex items-center justify-end gap-3"><button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors" onclick="document.getElementById('modal-edit-integration').remove()" type="button">Cancelar</button><button class="px-5 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold shadow-sm transition-all flex items-center gap-1.5" type="submit"><span class="material-symbols-outlined text-[18px]">check</span>Atualizar</button></div></form></div></div></body></html>
